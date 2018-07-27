@@ -26,4 +26,17 @@ def Bouss_rect(width, length, depth):
     c3 = (2 * pN * pM *sqrt(pV))/(pV - pV1)
     return np.where(pV1>=pV, 1/(4*pi)*((c1*c2)+arctan(c3)+pi),1/(4*pi)*((c1*c2)+arctan(c3)))
 
-class consolidation
+class Consolidation:
+
+    def __int__(self):
+        self.Cc = 0
+        self.Cr = 0
+        self.e0 = 0
+        self.initilized = False
+        self.H = 0
+
+    def plot_tv_doc():
+        pass
+
+class consolidation_Terzaghi (Consolidation):
+    pass
