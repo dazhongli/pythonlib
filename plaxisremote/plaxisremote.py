@@ -17,7 +17,7 @@ from plxscripting.easy import *
 
 def find_hoop_force (anchor_result,y_loc,R=15.597):
     '''
-    This function calculate the hoop force given the anchor result. 
+    This function calculate the hoop force given the anchor result.
     Parameter:
         anchor_result: a data frame containing the anchor result in a form of 'xa','ya','xb','yb','F','Fmax'
         y_loc: a string indicating the location to be calculated, either 'ya' or 'yb'
@@ -83,7 +83,7 @@ class Output:
 
     def get_phase_by_name(self,phase_name):
 
-        #it's strange that the name shown in phase ID is different from the internal name by Plaxis, which is a bug, 
+        #it's strange that the name shown in phase ID is different from the internal name by Plaxis, which is a bug,
         #Instead, we have to surcharge ID rather than Name
         #phase =  [x for x in self.g_o.Phases[:] if x.Name==phase_name]
         phase =  [x for x in self.g_o.Phases[:] if phase_name in x.Identification[:]]
@@ -103,7 +103,7 @@ class Output:
         y = np.array(self.g_o.getresults(phase, self.g_o.ResultTypes.NodeToNodeAnchor.Y,'node') )
         df = pd.DataFrame(dict(x=[],y=[],F=[],Fmax=[]))
         df.x = x; df.y = y; df.F =F; df.Fmax =Fmax
-        # put the two end points at the same row 
+        # put the two end points at the same row
         df_start = df.iloc[0:-1:2,:]
         df_end = df.iloc[1:-1:2,:]
         ix = 0
@@ -114,7 +114,7 @@ class Output:
             if xa > xb:
                 xa, xb = xb, xa
                 ya, yb = yb, ya
-            assert(abs(fa-fb)<1e-6) # we want make sure the two points form the same anchor by checking the force. 
+            assert(abs(fa-fb)<1e-6) # we want make sure the two points form the same anchor by checking the force.
             df_anchor.loc[ix] =[xa, ya,xb, yb, fa,fmax]
             ix += 1
         return df_anchor.sort_values(by ='ya',ascending=False)

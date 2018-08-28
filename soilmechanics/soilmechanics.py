@@ -4,7 +4,6 @@ import numpy as np
 def Ka(alpha, beta, theta, q, delta, c):
     pass
 
-
 def Bouss_rect(width, length, depth):
     '''
     This function returns the load factor  at corner of the rectangular loading
@@ -26,6 +25,19 @@ def Bouss_rect(width, length, depth):
     c3 = (2 * pN * pM *sqrt(pV))/(pV - pV1)
     return np.where(pV1>=pV, 1/(4*pi)*((c1*c2)+arctan(c3)+pi),1/(4*pi)*((c1*c2)+arctan(c3)))
 
+def Bouss_rect_average(length,width,depth):
+    '''
+    This function return the average stress coefficient under a rectangular loading
+    '''
+    l = length; b = width; Z = depth;
+    X = sqrt(l**2+l**2+Z**2)
+    Y = sqrt(b**2+l**2)
+    C1 = l*log(((X-b)*(Y+b))/((X+b)*(Y-b)))
+    C2 = b*log(((X-l)*(Y+l))/((X+l)*(Y-l)))
+    C3 = Z*arctan((l*b)/(Z*X))
+    alpha = 1/(2*pi*Z)*(C1+C2+C3)
+    return alpha
+class Consolidation
 class Consolidation:
 
     def __int__(self):
@@ -40,3 +52,4 @@ class Consolidation:
 
 class consolidation_Terzaghi (Consolidation):
     pass
+
