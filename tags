@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Bouss_rect	soilmechanics/soilmechanics.py	/^def Bouss_rect(width, length, depth):$/;"	f
+Bouss_rect_average	soilmechanics/soilmechanics.py	/^def Bouss_rect_average(length,width,depth):$/;"	f
+Consolidation	soilmechanics/soilmechanics.py	/^class Consolidation$/;"	c
+Consolidation	soilmechanics/soilmechanics.py	/^class Consolidation:$/;"	c
+Input	plaxisremote/plaxisremote.py	/^class Input:$/;"	c
+Ka	soilmechanics/soilmechanics.py	/^def Ka(alpha, beta, theta, q, delta, c):$/;"	f
+Material	soilmechanics/material.py	/^class Material:$/;"	c
+Output	plaxisremote/plaxisremote.py	/^class Output:$/;"	c
+Paper	plot/paper.py	/^class Paper:$/;"	c
+SoilMC	soilmechanics/material.py	/^class SoilMC(Material):$/;"	c
+__author__	ags/ags.py	/^__author__ = 'Dazhong Li'$/;"	v
+__author__	plaxisremote/Plaxis3DArcCell.py	/^__author__ = 'DazhongLi'$/;"	v
+__author__	plaxisremote/plaxisremote.py	/^__author__ = 'Dazhong Li'$/;"	v
+__author__	plot/plotdz.py	/^__author__ = 'Dazhong Li'$/;"	v
+__author__	plotdz.py	/^__author__ = 'Dazhong Li'$/;"	v
+__email__	ags/ags.py	/^__email__  ='dazhong.li@arup.com'$/;"	v
+__init__	ags/ags.py	/^    def __init__(self):$/;"	m	class:ags
+__init__	plaxisremote/plaxisremote.py	/^    def __init__(self,port):$/;"	m	class:Input
+__init__	plaxisremote/plaxisremote.py	/^    def __init__(self,port):$/;"	m	class:Output
+__init__	plot/paper.py	/^    def __init__(self,size = 'A4',orientation ='portrait',suptitle='' ):$/;"	m	class:Paper
+__init__	soilmechanics/consolidation.py	/^    def __init__(self):$/;"	m	class:condolidation
+__init__	soilmechanics/material.py	/^    def __init__(self):$/;"	m	class:Material
+__init__	soilmechanics/material.py	/^    def __init__(self):$/;"	m	class:SoilMC
+__int__	soilmechanics/soilmechanics.py	/^    def __int__(self):$/;"	m	class:Consolidation	file:
+__version__	ags/ags.py	/^__version__ = '1.0.0'$/;"	v
+__version__	plaxisremote/Plaxis3DArcCell.py	/^__version__= '1.0'$/;"	v
+__version__	plaxisremote/plaxisremote.py	/^__version__ = '1.0'$/;"	v
+__version__	plot/plotdz.py	/^__version__= '1.0'$/;"	v
+__version__	plotdz.py	/^__version__= '1.0'$/;"	v
+ags	ags/ags.py	/^class ags:$/;"	c
+condolidation	soilmechanics/consolidation.py	/^class condolidation:$/;"	c
+consolidation_Terzaghi	soilmechanics/soilmechanics.py	/^class consolidation_Terzaghi (Consolidation):$/;"	c
+convert_timestamp	dzgeometry.py	/^def convert_timestamp(x):$/;"	f
+convert_timestamp	plot/plotdz.py	/^def convert_timestamp(x):$/;"	f
+convert_timestamp	plotdz.py	/^def convert_timestamp(x):$/;"	f
+doc	soilmechanics/consolidation.py	/^    def doc(self):$/;"	m	class:condolidation
+doc_avg	soilmechanics/consolidation.py	/^    def doc_avg(self):$/;"	m	class:condolidation
+draw_geometry	plaxisremote/Plaxis3DArcCell.py	/^def draw_geometry(large_cell, small_cell,stone_column,ax = False):$/;"	f
+find_hoop_force	plaxisremote/plaxisremote.py	/^def find_hoop_force (anchor_result,y_loc,R=15.597):$/;"	f
+found_module	plaxisremote/plaxisremote.py	/^found_module = imp.find_module('plxscripting', [path])$/;"	v
+generate_pdf	plaxisremote/Plaxis3DArcCell.py	/^def generate_pdf(filepath,level,phasename,stone_column,large_cell,small_cell):$/;"	f
+get_a_figure	plot/paper.py	/^    def get_a_figure(self):$/;"	m	class:Paper
+get_anchor_force	plaxisremote/plaxisremote.py	/^    def get_anchor_force(self,phase):$/;"	m	class:Output
+get_color_iter	plot/paper.py	/^def get_color_iter():$/;"	f
+get_element_stress	plaxisremote/Plaxis3DArcCell.py	/^def get_element_stress(stress_gdf):$/;"	f
+get_marker_iter	plot/paper.py	/^def get_marker_iter():$/;"	f
+get_phase_by_name	plaxisremote/plaxisremote.py	/^    def get_phase_by_name(self,phase_name):$/;"	m	class:Output
+get_result_epwp	plaxisremote/plaxisremote.py	/^    def get_result_epwp(self,Phase):$/;"	m	class:Output
+get_soil_stresses	plaxisremote/Plaxis3DArcCell.py	/^def get_soil_stresses(element_stress_bar,stone_column,buffer=0.6):$/;"	f
+ka_Coulomb	soilmechanics/eachpressure.py	/^def ka_Coulomb(phi, c=0,alpha=90, beta=0,q=0,gamma=18,H=0):$/;"	f
+main	plaxisremote/Plaxis3DArcCell.py	/^def main():$/;"	f
+main	plot/plotcpt.py	/^def main():$/;"	f
+open_file	plaxisremote/plaxisremote.py	/^    def open_file(self,filename):$/;"	m	class:Output
+path	plaxisremote/plaxisremote.py	/^path = r'C:\\Program Files\\Plaxis\\PLAXIS 2D'$/;"	v
+plot_cpt_data	plot/plotcpt.py	/^def plot_cpt_data(ags_df,Nkt=12,pdf_path=False):$/;"	f
+plot_gdf	dzgeometry.py	/^def plot_gdf(gdf,fig = False,filename='Test',column_plot = False, label = False,$/;"	f
+plot_gdf	plot/plotdz.py	/^def plot_gdf(gdf,fig = False,filename='Test',column_plot = False, label = False,$/;"	f
+plot_gdf	plotdz.py	/^def plot_gdf(gdf,fig = False,filename='Test',column_plot = False, label = False,$/;"	f
+plot_pdf	plaxisremote/Plaxis3DArcCell.py	/^def plot_pdf(large_cell, small_cell,stone_column,soil_stress,figuretitle,$/;"	f
+plot_tv_doc	soilmechanics/soilmechanics.py	/^    def plot_tv_doc():$/;"	m	class:Consolidation
+plx	plaxisremote/plaxisremote.py	/^plx = imp.load_module('plxscripting', *found_module)$/;"	v
+project_opened	soilmechanics/.ropeproject/config.py	/^def project_opened(project):$/;"	f
+read	ags/ags.py	/^    def read(self,filename):$/;"	m	class:ags
+read_ags_file	plot/plotcpt.py	/^def read_ags_file(file_names):$/;"	f
+read_cell	plaxisremote/Plaxis3DArcCell.py	/^def read_cell(filename):$/;"	f
+read_stress_data	plaxisremote/Plaxis3DArcCell.py	/^def read_stress_data(filepath,level,phasename):$/;"	f
+remove_close_points	dzgeometry.py	/^def remove_close_points(gdf, threshold,column = False,how='average'):$/;"	f
+set_prefs	soilmechanics/.ropeproject/config.py	/^def set_prefs(prefs):$/;"	f
