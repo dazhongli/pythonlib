@@ -49,6 +49,10 @@ class Input:
         self.s_i = new_server('localhost', port)[0]
         self.g_i = new_server('localhost', port)[1]
 
+    def add_a_line(self, x1, y1, x2, y2):
+        return self.g_i.line(x1, y1, x2, y2)
+
+
 class Output:
 
     def __init__(self,port):
